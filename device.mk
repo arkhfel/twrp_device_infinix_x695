@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/infinix/x695c
+LOCAL_PATH := device/infinix/x695
 
 # A/B
 AB_OTA_PARTITIONS += \

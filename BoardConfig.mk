@@ -20,7 +20,7 @@
 
 ALLOW_MISSING_DEPENDENCIES := true
 
-DEVICE_PATH := device/infinix/x695c
+DEVICE_PATH := device/infinix/x695
 
 # Architecture
 TARGET_ARCH := arm64
@@ -36,7 +36,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := CY-X695C-H854-J
+TARGET_BOOTLOADER_BOARD_NAME := CY-X695-H854-D
 TARGET_NO_BOOTLOADER := true
 
 # Platform
@@ -44,7 +44,7 @@ TARGET_BOARD_PLATFORM := mt6785
 PRODUCT_PLATFORM := mt6785
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := x695c
+TARGET_OTA_ASSERT_DEVICE := X695
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
@@ -56,12 +56,12 @@ BOARD_KERNEL_TAGS_OFFSET := 0x0bc08000
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 #BOARD_INCLUDE_RECOVERY_DTBO := true
 
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 #BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
-#TARGET_KERNEL_SOURCE := kernel/infinix/x695c
-#TARGET_KERNEL_CONFIG := x695c_defconfig
+#TARGET_KERNEL_SOURCE := kernel/infinix/x695
+#TARGET_KERNEL_CONFIG := x695_defconfig
 #TARGET_KERNEL_CLANG_COMPILE := true
 
 BOARD_KERNEL_IMAGE_NAME := Image.gz
@@ -143,7 +143,7 @@ PLATFORM_VERSION := 16.1.0
 ## TWRP-Specific configuration
 
 TW_THEME := portrait_hdpi
-TW_DEVICE_VERSION := by_Rama982
+TW_DEVICE_VERSION := Infinix Note 10 Pro by: alFhatz86
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TW_HAS_MTP := true
@@ -165,15 +165,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 TW_HAS_NO_RECOVERY_PARTITION := true
 
 BOARD_USES_MTK_HARDWARE := true
-
-# Hide notch
-# Don't hide notch on OrangeFox builds
-ifneq ($(OF_HIDE_NOTCH),1)
-    TW_Y_OFFSET  := 100 
-    TW_H_OFFSET  := -100
-endif
-
-TARGET_SCREEN_HEIGHT := 2460
 
 # Decryption
 TW_INCLUDE_CRYPTO := true

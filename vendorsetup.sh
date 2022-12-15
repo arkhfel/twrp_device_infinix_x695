@@ -20,7 +20,7 @@
 #
 
 
-FDEVICE="x695c"
+FDEVICE="x695"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -89,7 +89,7 @@ then
 		export FOX_RECOVERY_BOOT_PARTITION="/dev/block/by-name/boot"
 		export OF_AB_DEVICE=1
 	export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
-		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/infinix/x695c/Magisk/Magisk.zip"
+		export FOX_USE_SPECIFIC_MAGISK_ZIP="$(gettop)/device/infinix/x695/Magisk/Magisk.zip"
 	fi
 fi
 #
