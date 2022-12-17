@@ -33,6 +33,5 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := x695
 PRODUCT_NAME := twrp_x695
 PRODUCT_BRAND := Infinix
-PRODUCT_MODEL := Note 10 Pro
+PRODUCT_MODEL := x695
 PRODUCT_MANUFACTURER := Infinix Mobility
-PRODUCT_RELEASE_NAME := Infinix Note 10 Pro 2022
