@@ -64,6 +64,7 @@ product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 
 
+/dev/block/platform/bootdevice/by-name/vbmeta /vbmeta emmc defaults defaults,slotselect
 /dev/block/platform/bootdevice/by-name/vbmeta_vendor /vbmeta_vendor emmc defaults first_stage_mount,nofail,slotselect
 /dev/block/platform/bootdevice/by-name/vbmeta_system /vbmeta_system emmc defaults first_stage_mount,nofail,slotselect,avb=vbmeta
 
@@ -92,6 +93,7 @@ product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 /dev/block/platform/bootdevice/by-name/cam_vpu2 /cam_vpu2 emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/cam_vpu3 /cam_vpu3 emmc defaults defaults
 
+/dev/block/platform/bootdevice/by-name/gz /gz emmc defaults defaults,slotselect
 /dev/block/platform/bootdevice/by-name/gz1 /gz1 emmc defaults defaults
 /dev/block/platform/bootdevice/by-name/gz2 /gz2 emmc defaults defaults
 
@@ -109,9 +111,6 @@ product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 
 /dev/block/platform/bootdevice/by-name/otp /otp emmc defaults defaults
-
-
-/dev/block/platform/bootdevice/by-name/vbmeta /vbmeta emmc defaults defaults
 
 
 
