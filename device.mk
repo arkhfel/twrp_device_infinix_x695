@@ -57,14 +57,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Health Hal
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service \
-    libhealthd.$(PRODUCT_PLATFORM)
+    android.hardware.health@2.1-service
 
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-mtkimpl.recovery \
-    android.hardware.boot@1.1-mtkimpl
+    android.hardware.boot@1.1-mtkimpl.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
