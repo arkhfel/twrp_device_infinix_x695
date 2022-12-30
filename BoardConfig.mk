@@ -167,8 +167,6 @@ RECOVERY_SDCARD_ON_DATA := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_HAS_NO_RECOVERY_PARTITION := true
 
-BOARD_USES_MTK_HARDWARE := true
-
 # Decryption
 TW_INCLUDE_CRYPTO := true
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
