@@ -26,11 +26,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit from x695 device
 $(call inherit-product, device/infinix/x695/device.mk)
 
-# Inherit from TWRP-common Stuff, if building TWRP.
-$(call inherit-product-if-exists, vendor/twrp/config/common.mk)
-
 # Inherit from PBRP-common Stuff, if building PBRP.
-$(call inherit-product-if-exists, vendor/pb/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := x695
