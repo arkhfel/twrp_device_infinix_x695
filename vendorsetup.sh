@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-FDEVICE="X695"
+FDEVICE="x695"
 #set -o xtrace
 
 fox_get_target_device() {
@@ -42,7 +42,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/bootdevice/by-name/boot"
 
 	# Alternate Codenames
-	export TARGET_DEVICE_ALT="dandelion,angelica,angelican,angelicain,cattail"
+	export TARGET_DEVICE_ALT="note10pro"
 
 	export OF_USE_GREEN_LED=0
 	export OF_HIDE_NOTCH=1
