@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from x695 device
-$(call inherit-product, device/infinix/x695/device.mk)
+# $(call inherit-product, device/infinix/x695/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := x695
