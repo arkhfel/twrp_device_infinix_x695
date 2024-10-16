@@ -29,6 +29,6 @@ $(call inherit-product, device/infinix/x695/device.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := x695
 PRODUCT_NAME := twrp_x695
-PRODUCT_BRAND := Infinix
+PRODUCT_BRAND := infinix
 PRODUCT_MODEL := x695
 PRODUCT_MANUFACTURER := Infinix Mobility
