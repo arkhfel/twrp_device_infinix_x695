@@ -146,14 +146,17 @@ PLATFORM_VERSION := 16.1.0
 
 TW_THEME := portrait_hdpi
 TW_DEVICE_VERSION := Infinix Note 10 Pro by: alFhatz86
-TW_EXTRA_LANGUAGES := true
-TW_INCLUDE_NTFS_3G := true
+TW_EXTRA_LANGUAGES := 
+TW_INCLUDE_NTFS_3G := 
 TW_HAS_MTP := true
 TW_EXCLUDE_TWRPAPP := true
 TW_INCLUDE_REPACKTOOLS := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
+
+TW_EXCLUDE_TZDATA := true
+TW_EXCLUDE_LPDUMP := true
 
 # Device config
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
