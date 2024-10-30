@@ -118,3 +118,6 @@ export OF_MAINTAINER="Arkhfel"
  fi
 fi
 # Reserved
+
+export OF_USE_LZMA_COMPRESSION=1
+export FOX_DRASTIC_SIZE_REDUCTION=1
