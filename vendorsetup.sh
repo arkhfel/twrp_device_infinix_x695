@@ -58,7 +58,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  # Version & Variant
  export FOX_VERSION="R11.1"
  export FOX_VARIANT="A14"
- export FOX_BUILD_TYPE="Stable"
+ export FOX_BUILD_TYPE="Beta"
 
  # A/B partitioning
  export FOX_AB_DEVICE=1
