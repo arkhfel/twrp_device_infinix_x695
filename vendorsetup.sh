@@ -39,6 +39,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
  ##export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/bootdevice/by-name/recovery_a"
  
+ export OF_DEFAULT_KEYMASTER_VERSION=4.0
  
  # OrangeFox Addons
  export FOX_ENABLE_APP_MANAGER=1
